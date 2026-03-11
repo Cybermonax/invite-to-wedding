@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Кольори для теми "Біла вишиванка з золотом" */
+  --color-wedding-bg: #FFFFFF; /* Білий фон (сорочка) */
+  --color-wedding-text: #2C2620; /* Темно-коричневий/чорний (текст) */
+  --color-wedding-gold: #D4AF37; /* Золота вишивка (акцент) */
+  --color-wedding-gold-light: #F3E8C8; /* Світле золото (фони карток) */
+  --color-wedding-gold-dark: #AA8A29; /* Темне золото (ховер кнопок) */
+  --color-wedding-border: #E6D5A7; /* Золотиста обводка */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-wedding-bg);
+  color: var(--color-wedding-text);
+}
+
+.bg-pattern {
+  background-color: var(--color-wedding-bg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Стилізація скролбару для краси */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-wedding-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-wedding-gold);
+  border-radius: 4px;
+}
